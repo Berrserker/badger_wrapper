@@ -1,15 +1,14 @@
-// Package badger is wrapper at https://godoc.org/github.com/dgraph-io/badger to easy use.
+// Package badger_wrapper is wrapper at https://godoc.org/github.com/dgraph-io/badger to easy use.
 //	If "namespace" or the "key" does not exist in the provided base, an error
 //	is returned, otherwise the retrieved value/s.
 //	If the key/value pair cannot be saved, an error is returned.
 //
-package badger
+package badger_wrapper
 
 import (
 	"context"
 	"fmt"
 	"os"
-	"sync"
 	"time"
 
 	"github.com/dgraph-io/badger/v3"
