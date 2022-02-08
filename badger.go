@@ -94,7 +94,7 @@ func (s *Service) Set(namespace, key string, value []byte) error {
 	}
 
 	// Save to disk.
-	err = s.Service.Sync()
+	err = s.db.Sync()
 
 	return err
 }
